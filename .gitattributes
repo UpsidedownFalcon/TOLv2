@@ -1,0 +1,8 @@
+# Consistent LF line endings for all files on all platforms from: https://codingarchitect.dev/blog/using-gitattributes-for-consistent-line-endings/ 
+* text=auto eol=lf 
+*.png    binary
+*.jpg    binary
+*.pdf    binary
+*.zip    binary 
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
