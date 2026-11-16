@@ -1,0 +1,84 @@
+(version 1)
+
+# TOL v2 custom design rules, draft 4 of 2026-11-15 (the record copy; the project's rule file is TOLv2.kicad_dru).
+# Every rule names its source. JLCPCB wording: layout-rules.md section 1 and layout-auto/gate1/jlcpcb-capabilities.md
+# (read 2026-11-15). The Board Setup minimums (clearance and track 0.10 mm, via 0.30 / 0.15 mm, hole to copper 0.20 mm,
+# hole to hole 0.20 mm, copper to edge 0.20 mm) are the floor; no rule below can go under them.
+# KiCad applies the LAST matching rule, so the general rules stand first.
+
+# JLCPCB: "SMD pad to pad clearance (different nets)": "0.15mm"
+(rule "JLCPCB SMD pad to SMD pad 0.15"
+	(constraint clearance (min 0.15mm))
+	(condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Pad_Type == 'SMD' && B.Pad_Type == 'SMD'"))
+
+# JLCPCB: "PTH to Track 0.28mm", "0.35mm is recommended, minimum 0.28mm"; "Inner layer PTH pad hole to copper clearance 0.3mm"
+(rule "JLCPCB plated pad hole to copper 0.35"
+	(constraint hole_clearance (min 0.35mm))
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'"))
+
+# JLCPCB: "Pad Hole-to-Hole Spacing": "0.45mm" (vias among themselves: 0.2 mm, the Board Setup minimum)
+(rule "JLCPCB pad hole to hole 0.45"
+	(constraint hole_to_hole (min 0.45mm))
+	(condition "A.Type == 'Pad' || B.Type == 'Pad'"))
+
+# JLCPCB: PTH annular ring "Multilayer: 1 oz: Recommended 0.20 mm or above; absolute minimum 0.15 mm"
+(rule "JLCPCB plated pad annular ring 0.15"
+	(constraint annular_width (min 0.15mm))
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'"))
+
+# JLCPCB, "recommended minimum spacing requirements" (assembly): chip to chip 0.15 mm. The footprints carry the BODY
+# outline on the courtyard layers, so this measures body to body, as JLCPCB's figure does where no leads face.
+(rule "JLCPCB assembly spacing 0.15 (chip to chip)"
+	(constraint courtyard_clearance (min 0.15mm))
+	(condition "A.Type == 'Footprint' && B.Type == 'Footprint'"))
+
+# The same table: chip to SOT 0.2 mm. SOT parts of this design: U4, U7 (SOT-23-5), D1 (SOT-23-6).
+(rule "JLCPCB assembly spacing 0.2 (to a SOT)"
+	(constraint courtyard_clearance (min 0.2mm))
+	(condition "A.Type == 'Footprint' && B.Type == 'Footprint' && (A.Reference == 'U4' || A.Reference == 'U7' || A.Reference == 'D1')"))
+
+# The same table gives chip to QFN 1.0 mm, chip to BGA 1.0 mm, QFN to SOT 1.0 mm. Owner's decision of 2026-11-15
+# ("0.5 mm around the ICs"): 0.5 mm from any part to U1 aQFN73, U2 DSBGA-8, U3 TDFN-8 and to the LGA sensors U5, U6
+# (no row for LGA in JLCPCB's table), because the parts do not fit the board of REQUIREMENTS.md R1 at 1.0 mm.
+# JLCPCB words the table as "recommended minimum spacing requirements": a remark in its DFM review is possible.
+(rule "Assembly spacing 0.5 (to a QFN, BGA or LGA; owner 2026-11-15)"
+	(constraint courtyard_clearance (min 0.5mm))
+	(condition "A.Type == 'Footprint' && B.Type == 'Footprint' && (A.Reference == 'U1' || A.Reference == 'U2' || A.Reference == 'U3' || A.Reference == 'U5' || A.Reference == 'U6')"))
+
+# JLCPCB PCBA FAQ: "the edges of the traces and components must be more than 0.3mm away from the edge of the board".
+# Excepted: the lands of JLCPCB's own USB-C footprint J1, which lie 0.21 mm from that footprint's cut-out (the
+# Board Setup minimum, JLCPCB's "Copper clearance from routed board edges: >=0.2 mm", still applies to them).
+(rule "Copper to board edge 0.3 (all but the lands of J1)"
+	(constraint edge_clearance (min 0.3mm))
+	(condition "!A.memberOfFootprint('J1')"))
+
+# Owner's practice: "Use 45° angles, avoid sharp corners"; guides AN1259 p6, AN203 p10. KiCad checks the angle between
+# two connected track segments: nothing sharper than a right angle. (Direction 0 / 45 / 90 degrees is checked by the
+# layout agent's own script; KiCad has no such check.)
+(rule "No acute track corners"
+	(constraint track_angle (min 90))
+	(condition "A.Type == 'Track'"))
+
+# 6 layers since 2026-11-15 (owner), stack-up JLC06081H-2116: outer layer over the next ground plane = 2116 prepreg,
+# 0.1164 mm, Dk 4.16 (JLCPCB's own data, layout-auto/six-layer/jlcpcb/). 90 ohm pair: 0.173 mm wide, 0.2 mm apart.
+# DERIVED by the layout agent (layout-auto/six-layer/impedance.py: a formula scaled to reproduce the figure the owner
+# read from JLCPCB's calculator for the 4-layer stack-up, 0.1537 / 0.2 mm), NOT read from the calculator: to be read
+# before ordering. The limits around the figures (gap at least 0.19 mm, width 0.165 to 0.18 mm) are the layout
+# agent's, so that a squeezed pair or a wrong width is caught. No maximum gap: KiCad measures every parallel stretch
+# of the two nets, also where the pair must split to reach its lands; the gap along the pair is checked by the layout
+# agent's own script.
+(rule "USB 90 ohm pair: gap 0.2"
+	(constraint diff_pair_gap (min 0.19mm) (opt 0.2mm))
+	(condition "A.NetClass == 'USB_90R'"))
+
+(rule "USB 90 ohm pair: track 0.173"
+	(constraint track_width (min 0.165mm) (opt 0.173mm) (max 0.18mm))
+	(condition "A.NetClass == 'USB_90R'"))
+
+# 50 ohm: through the match the track is coplanar, 0.50 mm with 0.15 mm to the top-layer ground (the clearance of net
+# class RF_50R), all inner layers cut away below it (Nordic PS p967) and referred to the bottom layer; JLCPCB's
+# calculator gave 0.5479 mm for that on 4 layers, the 6-layer figure was not read. From the SoC's ball to C3, where
+# the inner ground remains: 0.178 mm over 0.1164 mm of 2116 (DERIVED, six-layer/impedance.py; 0.1509 mm on 4 layers).
+(rule "RF 50 ohm: track 0.15 to 0.5479, the antenna lands 0.8 (Walsin p3)"
+	(constraint track_width (min 0.15mm) (opt 0.5479mm) (max 0.8mm))
+	(condition "A.NetClass == 'RF_50R'"))
