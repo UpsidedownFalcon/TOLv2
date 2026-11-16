@@ -1,0 +1,104 @@
+(footprint "CAP_DNP_0402"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Unfitted 0402 position for antenna tuning (shunt C or L chosen at bring-up); land as the 0402 RF match capacitors; not in the BOM or position files; land pattern: no vendor land pattern; easyeda2kicad C0402 pads kept, consistent with the 1.0 x 0.5 body and 0.25 terminals")
+	(tags "0402 chip")
+	(property "Reference" "REF**"
+		(at 0 -1.02 0)
+		(layer "F.SilkS")
+		(uuid "ab55c1ed-7b59-4c34-b230-87daa8d9edd3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CAP_DNP_0402"
+		(at 0 1.02 0)
+		(layer "F.Fab")
+		(uuid "001b2e89-2061-47b1-aa16-233370fa269a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "53140df9-02e4-49c8-8ef5-a75965929397")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f9c3f6e5-3e9c-4c2e-a20c-bcff03459e5c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -0.93 -0.53)
+		(end 0.93 0.53)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "2160e1fd-8b24-4689-a6c4-223f4b4d3902")
+	)
+	(fp_rect
+		(start -0.5 -0.25)
+		(end 0.5 0.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8f39c6d3-4b23-4364-91bf-e7bcd848b5b1")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "a677392e-8b6b-4517-b0c3-b6aa7476589d")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.06)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.42 0)
+		(size 0.5 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "035e8e64-ec1a-46d1-88b4-c8842958f13a")
+	)
+	(pad "2" smd roundrect
+		(at 0.42 0)
+		(size 0.5 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "bfc85eb0-fde5-40dc-bf91-649a493920ed")
+	)
+	(embedded_fonts no)
+)

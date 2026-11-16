@@ -1,0 +1,234 @@
+(footprint "XTAL_32MHz_2016_NX2016SA-32M-EXS00A-CS06465"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "NDK NX2016SA 32 MHz crystal, CL 10 pF, +-10 ppm at 25 C, +-10 ppm -20..+70 C, ESR 50 ohm max, 2016 4-pad (nRF52840 HFXO); pins 1 and 3 crystal, 2 and 4 GND (cover); land: pads as the EasyEDA/JLCPCB library footprint for C1986260")
+	(tags "2016-4")
+	(property "Reference" "REF**"
+		(at 0 -4.55 0)
+		(layer "F.SilkS")
+		(uuid "78501898-f88a-492a-8dc2-80247cfe8c7b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "XTAL_32MHz_2016_NX2016SA-32M-EXS00A-CS06465"
+		(at 0 4.55 0)
+		(layer "F.Fab")
+		(uuid "dabba062-b919-43dc-b916-df7c4219ea98")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00c13b6a-1647-4e5c-82e7-4f1a8cc96367")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3b4f3b7b-56f3-480e-bcf2-4f0656859466")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.65 0.15)
+		(end -1.65 1.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "63d03c16-1573-4784-88d8-fb53e7a89818")
+	)
+	(fp_line
+		(start -1.65 1.45)
+		(end -0.25 1.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c0a986ad-1a30-4a8c-9aec-5f396eee3a70")
+	)
+	(fp_line
+		(start -1.35 -1.15)
+		(end 1.35 -1.15)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6534c906-cba1-4dff-b105-cfd97466c45a")
+	)
+	(fp_line
+		(start -1.35 1.15)
+		(end -1.35 -1.15)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5cef4f57-4b35-4bbc-86e0-5b175cdb9a08")
+	)
+	(fp_line
+		(start 1.35 -1.15)
+		(end 1.35 1.15)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d1bfc144-e246-4c76-ab19-936d656afaad")
+	)
+	(fp_line
+		(start 1.35 1.15)
+		(end -1.35 1.15)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c4280e61-5be2-4ee3-b9a7-11435b838e34")
+	)
+	(fp_circle
+		(center -1 0.8)
+		(end -0.97 0.8)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "266b2778-7c27-4132-94b7-513cb5209f83")
+	)
+	(fp_circle
+		(center -1.14 0.89)
+		(end -1.02 0.89)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "20ebd9a4-206e-46b7-8ac5-4439ef3a4831")
+	)
+	(fp_line
+		(start -1 -0.8)
+		(end 1 -0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c7cf0d4d-3942-4ed2-ba71-c6ed8542b6c3")
+	)
+	(fp_line
+		(start -1 0.8)
+		(end -1 -0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "aeaae3c4-54f8-4e18-8d19-804b98028955")
+	)
+	(fp_line
+		(start 1 -0.8)
+		(end 1 0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "dfd6eade-4457-448e-b6b7-3d8d4cbc21c2")
+	)
+	(fp_line
+		(start 1 0.8)
+		(end -1 0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f501a01c-ec60-4fa7-a419-f5aaa5540c0c")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "837e93e4-fa72-4d4e-9bcf-9c7dc488f6f6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.7 0.55)
+		(size 0.9 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "88e1bff5-e1e4-41cd-8af7-07316b303e9b")
+	)
+	(pad "2" smd rect
+		(at 0.7 0.55)
+		(size 0.9 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2de05a49-5e62-40c2-bc3c-6c8cefe2f013")
+	)
+	(pad "3" smd rect
+		(at 0.7 -0.55)
+		(size 0.9 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bbae9272-a1ff-43b9-9d47-25208f98fbf7")
+	)
+	(pad "4" smd rect
+		(at -0.7 -0.55)
+		(size 0.9 0.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "832c0ea6-c24a-484b-95b0-6b57c7e30ed4")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libs/3d-models/XTAL_32MHz_2016_NX2016SA-32M-EXS00A-CS06465.step"
+		(offset
+			(xyz 0 0 0.01)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/libs/3d-models/XTAL_32MHz_2016_NX2016SA-32M-EXS00A-CS06465.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,251 @@
+(footprint "IND_4n7_0402_VHF100505HQ4N7BT"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "FH 4.7 nH +-0.1 nH 0402 high-frequency chip inductor, 700 mA (RF match series L1); land: pads as the EasyEDA/JLCPCB library footprint for C3032786")
+	(tags "0402")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "dab91f83-4ca7-465b-bb4e-ec8040e1c3fe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "IND_4n7_0402_VHF100505HQ4N7BT"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "b5fbdd8d-9472-4133-a4ce-9edb3e6d465e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "17388411-73ab-4c6a-9f70-cd98bc2ba9de")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "70573fcc-6f7e-4d3f-b263-e7f3a5cba05e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.07 -0.34)
+		(end -0.92 -0.49)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec6ef364-6740-461e-ad27-71933d5212d0")
+	)
+	(fp_line
+		(start -1.07 0.36)
+		(end -1.07 -0.34)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "10c66e0c-7dc5-4579-9db0-96eaee560c90")
+	)
+	(fp_line
+		(start -0.92 -0.49)
+		(end -0.13 -0.49)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3ee700f9-1145-4255-b53d-9124c0c15e4e")
+	)
+	(fp_line
+		(start -0.92 0.51)
+		(end -1.07 0.36)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6c6e5eb4-83a6-4be3-8dd4-4c27afaa9805")
+	)
+	(fp_line
+		(start -0.13 0.51)
+		(end -0.92 0.51)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9ea7cb0a-13d6-43aa-9044-3e31e0c241a6")
+	)
+	(fp_line
+		(start 0.13 0.51)
+		(end 0.92 0.51)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ba604c25-a66d-4158-a1d1-5c2ac3520a83")
+	)
+	(fp_line
+		(start 0.91 -0.49)
+		(end 0.13 -0.49)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9686bf23-ae6a-4da4-97e3-953fc1eb327e")
+	)
+	(fp_line
+		(start 0.92 0.51)
+		(end 1.07 0.36)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "24558c32-0d41-45d5-a245-21f8b6a5e4d5")
+	)
+	(fp_line
+		(start 1.07 -0.33)
+		(end 0.91 -0.49)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7c1a827f-b565-4dc4-b308-fd671868da4a")
+	)
+	(fp_line
+		(start 1.07 0.36)
+		(end 1.07 -0.33)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "10e60001-dfce-449c-812d-b712af188812")
+	)
+	(fp_circle
+		(center -0.5 0.25)
+		(end -0.47 0.25)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "be566f38-4c2f-4202-94cc-4ebcb41efa20")
+	)
+	(fp_line
+		(start -0.5 -0.25)
+		(end 0.5 -0.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "bb67c28b-6c67-449d-be6d-7b4baacace28")
+	)
+	(fp_line
+		(start -0.5 0.25)
+		(end -0.5 -0.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "665deb2a-4cd6-42ca-a3aa-c10ead9f1bcf")
+	)
+	(fp_line
+		(start 0.5 -0.25)
+		(end 0.5 0.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1f684854-facc-4f83-8dda-387af0265e6f")
+	)
+	(fp_line
+		(start 0.5 0.25)
+		(end -0.5 0.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "2c770e40-0c82-4112-baf1-67fac2ac95eb")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "5d517514-9ed4-486c-bda7-ae36c27648fb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.42 0)
+		(size 0.54 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "288c3060-24c7-4eb9-af55-1b0a98348cb6")
+	)
+	(pad "2" smd rect
+		(at 0.42 0)
+		(size 0.54 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "53e59d5f-8f6a-4847-8051-cdfb1efeba16")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libs/3d-models/IND_4n7_0402_VHF100505HQ4N7BT.step"
+		(offset
+			(xyz 0 0 0.25)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/libs/3d-models/IND_4n7_0402_VHF100505HQ4N7BT.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

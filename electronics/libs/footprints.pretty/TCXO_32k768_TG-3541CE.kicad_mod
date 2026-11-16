@@ -1,0 +1,261 @@
+(footprint "TCXO_32k768_TG-3541CE"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Epson TG-3541CE 32.768 kHz TCXO, XA grade +-1.9 ppm 0-50 C, CMOS output with OE, 3.2x2.5x1.0 mm 10-pad; land: pads as the EasyEDA/JLCPCB library footprint for C1987384")
+	(tags "3225-10")
+	(property "Reference" "REF**"
+		(at 0 -5.13 0)
+		(layer "F.SilkS")
+		(uuid "03617af1-d62c-49a2-a5d8-9ef1cda72789")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TCXO_32k768_TG-3541CE"
+		(at 0 5.13 0)
+		(layer "F.Fab")
+		(uuid "c1fd8868-4723-4c77-98e6-5572a2a7871f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8d0ad2a5-13fc-4c6f-9b3e-f7eb1b475a8f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "61acef3e-ff14-4487-b00a-be1cb36ca9d8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.9 -2.03)
+		(end 1.91 -2.03)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6721b1c6-c02a-42a6-8bfa-30e4d6964a96")
+	)
+	(fp_line
+		(start -1.9 2.03)
+		(end -1.9 -2.03)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ebf81688-0644-458e-b3dc-71bbfc100c36")
+	)
+	(fp_line
+		(start 1.91 -2.03)
+		(end 1.91 2.03)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7311f7d0-8a22-410c-9f46-8f63b4e2f52a")
+	)
+	(fp_line
+		(start 1.91 2.03)
+		(end -1.9 2.03)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "da604d72-47f4-44d9-bed7-961199f32d52")
+	)
+	(fp_circle
+		(center -2.29 1.27)
+		(end -2.16 1.27)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "63c8580a-122d-4c5f-ab83-59ce821efda8")
+	)
+	(fp_circle
+		(center -1.6 1.25)
+		(end -1.57 1.25)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "f2b5694f-449b-411f-9acd-0a9b328e8a3a")
+	)
+	(fp_circle
+		(center -1.38 1.46)
+		(end -1.23 1.46)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "21211eb4-446d-4db4-8bf3-3f9a371322a4")
+	)
+	(fp_line
+		(start -1.6 -1.25)
+		(end 1.6 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "640e11ca-0abe-43d3-a44f-f9bf3a7a5bb4")
+	)
+	(fp_line
+		(start -1.6 1.25)
+		(end -1.6 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d1a5110c-2e73-44e2-9454-3a6d3c327130")
+	)
+	(fp_line
+		(start 1.6 -1.25)
+		(end 1.6 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3fbb5438-623b-41c1-b601-cd2760aec0c4")
+	)
+	(fp_line
+		(start 1.6 1.25)
+		(end -1.6 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "667c1e4c-74d9-4135-9127-9a1faa6e1623")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "a784ddd9-4344-4194-b24e-d6c73fca843e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.4 1.13)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4d90aa13-2693-45d5-bf9a-2f089a55d409")
+	)
+	(pad "2" smd rect
+		(at -0.7 1.13)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9fab0ef1-526e-4ab1-94a1-1ecab9a5c418")
+	)
+	(pad "3" smd rect
+		(at 0 1.13)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4b27e692-738c-4449-b3b0-b4925050ed87")
+	)
+	(pad "4" smd rect
+		(at 0.7 1.13)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "81e76673-7a2f-45f6-aaeb-1ff241486460")
+	)
+	(pad "5" smd rect
+		(at 1.4 1.13)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ae28245e-0008-41a9-b943-ffd0f2b7772b")
+	)
+	(pad "6" smd rect
+		(at 1.4 -1.13)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "51a2dec0-4a93-4399-9eff-ff41c217bca3")
+	)
+	(pad "7" smd rect
+		(at 0.7 -1.13)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "86f4f268-5e99-4aeb-b90a-b0902c637d30")
+	)
+	(pad "8" smd rect
+		(at 0 -1.13)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5c10b1d3-b30f-4c4b-bce0-cdcc2e838dd1")
+	)
+	(pad "9" smd rect
+		(at -0.7 -1.13)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ba7f256f-5cd9-4574-92ff-a12a88dcfe02")
+	)
+	(pad "10" smd rect
+		(at -1.4 -1.13)
+		(size 0.4 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "61099876-70fb-473b-b016-55649848a39a")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libs/3d-models/TCXO_32k768_TG-3541CE.step"
+		(offset
+			(xyz 0 0 1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/libs/3d-models/TCXO_32k768_TG-3541CE.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,126 @@
+(footprint "CAP_12pF_50V_NP0_0402_0402N120G500CT"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Walsin 12 pF +-2 % 50 V NP0 0402 MLCC (HFXO load capacitor); land pattern: no vendor land pattern; easyeda2kicad C0402 pads kept, consistent with the 1.0 x 0.5 body and 0.25 terminals")
+	(tags "0402 chip")
+	(property "Reference" "REF**"
+		(at 0 -1.02 0)
+		(layer "F.SilkS")
+		(uuid "482ccd78-0f02-4f72-9fe1-8ebc858ff2b4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "CAP_12pF_50V_NP0_0402_0402N120G500CT"
+		(at 0 1.02 0)
+		(layer "F.Fab")
+		(uuid "f7066dd4-982b-4c92-8559-4c98f2d73d3f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "49f080f8-9010-4007-a331-dbb83919543c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a6bde47d-55bd-4278-b383-66dab772917b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -0.93 -0.53)
+		(end 0.93 0.53)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "5583338c-af63-473a-9709-4d7425d181d9")
+	)
+	(fp_rect
+		(start -0.5 -0.25)
+		(end 0.5 0.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "549d6400-df65-488f-a64d-d4d2f3e3309f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "b640989c-864b-4085-ae25-bdc50535f4c7")
+		(effects
+			(font
+				(size 0.4 0.4)
+				(thickness 0.06)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.42 0)
+		(size 0.5 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "7df4b298-602a-47f8-8ef4-8c26d44e8190")
+	)
+	(pad "2" smd roundrect
+		(at 0.42 0)
+		(size 0.5 0.54)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "e6066045-b02e-4d9c-ae8e-a5c73c137b50")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libs/3d-models/CAP_12pF_50V_NP0_0402_0402N120G500CT.step"
+		(offset
+			(xyz 0 0 0.25)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/libs/3d-models/CAP_12pF_50V_NP0_0402_0402N120G500CT.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
